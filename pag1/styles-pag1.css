@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+/* consfiguracion del modal  */
+.modal{
+    /* color de fondo semi transparente para el efecto visual */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* position: fixed para que quede fijo y flotante por enciam de todo el contenido */
+    position: fixed;
+    /* top -100vh para que no se muetre en la pantalla */
+    top: -100vh;
+    /* 100vh y 100% para que ocupe toda la pantalla */
+    height: 100vh;
+    width: 100%;
+}
+
+/* configuraciond del contenido del modal */
+.sub-modal{
+    /* unfondo para diferenciar el contenido del semitransparente */
+    background-color: black;
+    color: white;
+    /* un heigth y un width para decirle que tamaño va a ocupar */
+    height:60%;
+    width: 70%;
+    /* position: absolute para decirle que se acomoda con respecto a su padre fixe */
+    position: absolute;
+    /* ajutando todos loos bordes a 0 para que poderlo centrar */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* margin auto para centrar automaticamente ya que no toca los bordes en 0  */
+    margin: auto;
+    /* display flex para acomodar la parte interior del modal */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* espacio entre los elementos interno */
+    gap: 10px;
+    /* este opadding es para quer el contenido no toque l borde del contenedor  */
+    padding: 20px 40px;
+}
+
+/* poner y acomodar imagen del modal */
+.img-modal{
+    /* dar un tamaño al contenedor */
+    height: 300px;
+    width: 400px;
+    /* agregar imagen y ajustar la imagen */
+    background-image: url("https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* diseñar el botond e cerrar */
+.btn-cerrar-modal{
+    /* dar color al fondo del boton */
+    background-color: white;
+    /* dar un tamaño al boton */
+    padding: 5px 20px;
+    /* bordes redondeados para una mejora visual  */
+    border-radius: 10px;
+    /* se quita la decoracion de la fuente */
+    text-decoration: none;
+    color: black;
+}
+
+/* cuando se cliquea el boton se cierre */
+/* para esto revise el "./modal_pag1.js  --->*/
